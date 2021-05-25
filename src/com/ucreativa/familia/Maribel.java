@@ -4,4 +4,8 @@ public class Maribel {
     public Maribel(String saludo){
         System.out.println(saludo);
     }
+
+    public Maribel() {
+
+    }
 }
