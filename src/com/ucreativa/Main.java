@@ -11,7 +11,10 @@ public class Main {
         Maribel mama =new Maribel("hola chiquillos");
         mama.setcumple();
         int edad = mama.getEdad();
-        System.out.println("hola Clase" * edad);
+        System.out.println("mi edad es" + edad);
+        System.out.println("le gusta " + mama.getHobby());
+
+        System.out.println("bye clase " + edad);
 
     }
 }
