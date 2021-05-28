@@ -7,7 +7,7 @@ import com.ucreativa.familia.Maribel;
 public class Main {
 
     public static void main(String[] args) {
-        Carolina yo = new Carolina();
+        Carolina yo = new Carolina("hola soy caro");
         Maribel mama =new Maribel("hola chiquillos");
         mama.setcumple();
         int edad = mama.getEdad();
