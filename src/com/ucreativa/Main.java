@@ -1,20 +1,13 @@
-package com.ucreativa;
-
-import com.ucreativa.familia.Carolina;
-
-import com.ucreativa.familia.Maribel;
+package com.ucreativa.vacunacion;
 
 public class Main {
 
     public static void main(String[] args) {
-        Carolina yo = new Carolina("hola soy caro");
-        Maribel mama =new Maribel("hola chiquillos");
-        mama.setcumple();
-        int edad = mama.getEdad();
-        System.out.println("mi edad es" + edad);
-        System.out.println("le gusta " + mama.getHobby());
+        Familia mama  = new Familia("Maribel","103450678",53,true,"mama");
+        Amigo carlos = new Amigo("jose","406870987",35,false,"amigo","N/A" );
+        Familia hermano = new Familia("Ricardo","402060476",34,true,"hermano");
 
-        System.out.println("bye clase " + edad);
+
 
     }
 }
