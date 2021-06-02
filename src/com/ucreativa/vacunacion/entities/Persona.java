@@ -1,4 +1,4 @@
-package com.ucreativa.vacunacion;
+package com.ucreativa.vacunacion.entities;
 
 public class Persona {
     private String nombre;
@@ -21,6 +21,7 @@ public class Persona {
         this.edad = edad;
         this.riesgo = riesgo;
     }
+
 
     public String getNombre() {
         return nombre;
