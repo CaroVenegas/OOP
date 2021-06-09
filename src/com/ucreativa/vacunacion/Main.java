@@ -1,5 +1,3 @@
-package com.ucreativa.vacunacion;
-
 import com.ucreativa.vacunacion.entities.Amigo;
 import com.ucreativa.vacunacion.entities.BitacoraVacunas;
 import com.ucreativa.vacunacion.entities.Familia;
@@ -14,17 +12,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+    private static String print;
 
+    public static void main(String[] args)
         Scanner in = new Scanner(System.in);
-
-       InMemoryRepository repo = new InMemoryRepository();
+        List<BitacoraVacunas> db = new ArrayList<>();
+        InMemoryRepository repo = new InMemoryRepository();
+        Persona persona;
+        String nombre, cedula, edad, riesgo, isAmigo, relacion, facebook, parentesco, marca;
 
         while (true) {
+            String nombre, cedula, edad, riesgo, isAmigo, relacion, facebook, parentesco, marca;
+            Persona persona;
+            System.out.println("Nombre");
+            nombre = in.nextLine();
+            System.out.println("Cedula");
 
-            String nombre,cedula,edad,riesgo,isAmigo,relacion,facebook,parentesco,marca;
-
-        Persona persona;
-            System.out.println("Nombre:");
+        }
+        System.out.println("Nombre:");
             nombre = in.nextLine();
             System.out.println("Cedula:");
             cedula = in.nextLine();
@@ -39,7 +44,7 @@ public class Main {
                 relacion = in.nextLine();
                 System.out.println("Facebook:");
                 facebook = in.nextLine();
-                persona = new Amigo (nombre, cedula, Integer.parseInt (edad), riesgo.equals("S"), relacion, facebook);
+                persona = new Amigo(nombre, cedula, Integer.parseInt (edad), riesgo.equals("S"), relacion, facebook);
 
             } else {
                 System.out.println("Parentesco:");
@@ -55,7 +60,7 @@ public class Main {
             if (print.equals("S")){
                 for (String item : repo.get()) {
                     System.out.println(item);
-              }
+                }
 
            }
 
