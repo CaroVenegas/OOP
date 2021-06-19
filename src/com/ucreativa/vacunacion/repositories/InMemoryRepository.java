@@ -31,5 +31,4 @@ public class InMemoryRepository implements Repository {
         return lines;
     }
 
-
 }
